@@ -7,7 +7,7 @@ class Users{
 	    $this->db = $database;
 	}
 
-	public function user_exists($username) {
+public function user_exists($username) {
  
 	$query = $this->db->prepare("SELECT COUNT(`id`) FROM `uyeler` WHERE `username`= ?");
 	$query->bindValue(1, $username);

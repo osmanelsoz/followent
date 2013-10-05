@@ -1,11 +1,13 @@
 <?php 
 #starting the users session
 session_start();
-require '../connect/database.php';
+require '../core/connect/database.php';
 require 'classes/grups.php';
 require 'classes/general.php';
  
-$users 		= new Users($db);
+$grup 		= new Grup($db);
 $general 	= new General();
+
  
 $errors 	= array();
+?>

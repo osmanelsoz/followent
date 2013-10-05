@@ -1,8 +1,8 @@
 <?php 
 require 'core/init.php';
  
-$user 		= $users->userdata($_SESSION['id']);
-$username 	= $user['username'];
+//$user 		= $users->userdata($_SESSION['id']);
+//$username 	= $user['username'];
  
 ?>
 <!doctype html>
@@ -20,7 +20,7 @@ $username 	= $user['username'];
 			<li><a href="logout.php">Logout</a></li>
  
 		</ul>
-		<h1>Hello <?php echo $username, '!'; ?></h1><!-- This will say Hello sunny! for example -->
+		
 	</div>
 </body>
 </html>

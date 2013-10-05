@@ -24,6 +24,9 @@ html{
 	height: 100px;
 	background: #4788ff;
 	text-align:center;
+	  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:#000;
 } 
 .bannerAdi{
 	width: 300px;
@@ -37,17 +40,18 @@ html{
 .bannerLinkler{
 	float:right;
 	width: 700px;
-	height: 50px;
+	height: 100px;
  }
 .bannerLink{
 	width: 150px;
 	color: #fff;
-	height:  50px;
+	height:  100px;
 	float:left;
 }
 .bannerLink:hover{
-	background-color: #fff;
+	background-color: #D0D0D0 ;
 	color: #4788ff;
+	/*background-image:url(../images/bg.png); */
 }
 #container{
 	width: 1000px;

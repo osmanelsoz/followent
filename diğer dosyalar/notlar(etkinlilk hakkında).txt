@@ -1,0 +1,22 @@
+Etkinlik açıklaması,
+ etkinlik yeri, 
+ etkinlik saati, 
+ etkinlik katılımcıları yani bir işadamı sanatçı ya da bir şirket varsa onlar. 
+ etkinlik ücreti (varsa) 
+ bir de etkinlik biletlerinin satıldığı yeri de yazabiliriz.
+
+ 
+ etkinliklerin afişleri 
+ 
+ http://muratbulbul.tk/takvim/
+ 
+ 
+spor 
+sanat
+ bilim
+ teknik 
+ iş hayatı 
+ eğlence 
+ akademik 
+ ve topluluk içi etkinlik 
+ ya da topluluk yönetimi etkinliği

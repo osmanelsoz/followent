@@ -9,7 +9,7 @@ class Users{
 
 public function user_exists($username) {
  
-	$query = $this->db->prepare("SELECT COUNT(`id`) FROM `uyeler` WHERE `username`= ?");
+	$query = $this->db->prepare("SELECT COUNT(`grup_id`) FROM `grup_kullanici` WHERE `grup_kullanici`= ?");
 	$query->bindValue(1, $username);
  
 	try{
@@ -31,7 +31,7 @@ public function user_exists($username) {
  
 public function email_exists($email) {
  
-	$query = $this->db->prepare("SELECT COUNT(`id`) FROM `uyeler` WHERE `email`= ?");
+	$query = $this->db->prepare("SELECT COUNT(`grup_id`) FROM `grup_kullanici` WHERE `email`= ?");
 	$query->bindValue(1, $email);
  
 	try{
@@ -58,7 +58,7 @@ public function register($username, $password, $email){
 	$email_code = sha1($username + microtime());
 	$password   = sha1($password);
  
-	$query 	= $this->db->prepare("INSERT INTO `uyeler` (`username`, `password`, `email`, `ip`, `time`, `email_code`) VALUES (?, ?, ?, ?, ?, ?) ");
+	$query 	= $this->db->prepare("INSERT INTO `grup_kullanici` (`username`, `password`, `email`, `ip`, `time`, `email_code`) VALUES (?, ?, ?, ?, ?, ?) ");
  
 	$query->bindValue(1, $username);
 	$query->bindValue(2, $password);
@@ -77,7 +77,7 @@ public function register($username, $password, $email){
 }
 public function activate($email, $email_code) {
 		
-		$query = $this->db->prepare("SELECT COUNT(`id`) FROM `uyeler` WHERE `email` = ? AND `email_code` = ? AND `confirmed` = ?");
+		$query = $this->db->prepare("SELECT COUNT(`grup_id`) FROM `grup_kullanici` WHERE `email` = ? AND `email_code` = ? AND `confirmed` = ?");
  
 		$query->bindValue(1, $email);
 		$query->bindValue(2, $email_code);
@@ -90,7 +90,7 @@ public function activate($email, $email_code) {
  
 			if($rows == 1){
 				
-				$query_2 = $this->db->prepare("UPDATE `uyeler` SET `confirmed` = ? WHERE `email` = ?");
+				$query_2 = $this->db->prepare("UPDATE `grup_kullanici` SET `confirmed` = ? WHERE `email` = ?");
  
 				$query_2->bindValue(1, 1);
 				$query_2->bindValue(2, $email);				
@@ -108,19 +108,19 @@ public function activate($email, $email_code) {
 	}
 	public function login($username, $password) {
  
-	$query = $this->db->prepare("SELECT `password`, `id` FROM `uyeler` WHERE `username` = ?");
+	$query = $this->db->prepare("SELECT `sifre`, `grup_id` FROM `grup_kullanici` WHERE `grup_kullanici` = ?");
 	$query->bindValue(1, $username);
 	
 	try{
 		
 		$query->execute();
 		$data 				= $query->fetch();
-		$stored_password 	= $data['password'];
-		$id 				= $data['id'];
+		$stored_password 	= $data['sifre'];
+		$grup_id 				= $data['grup_id'];
 		
 		#hashing the supplied password and comparing it with the stored hashed password.
 		if($stored_password === sha1($password)){
-			return $id;	
+			return $grup_id;	
 		}else{
 			return false;	
 		}
@@ -129,27 +129,6 @@ public function activate($email, $email_code) {
 		die($e->getMessage());
 	}
 }
-public function email_confirmed($username) {
- 
-	$query = $this->db->prepare("SELECT COUNT(`id`) FROM `uyeler` WHERE `username`= ? AND `confirmed` = ?");
-	$query->bindValue(1, $username);
-	$query->bindValue(2, 1);
-	
-	try{
-		
-		$query->execute();
-		$rows = $query->fetchColumn();
- 
-		if($rows == 1){
-			return true;
-		}else{
-			return false;
-		}
- 
-	} catch(PDOException $e){
-		die($e->getMessage());
-	}
- 
-}
+
  
 }

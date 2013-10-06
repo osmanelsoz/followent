@@ -12,8 +12,7 @@
 <body>	
 <div id="main">
 	<div id="banner"> 
-		<div class="bannerAdi">FOLLOWENT </div>
-		<div class="bannerLinkler"><div class="bannerLink">Etkinlikler</div><div class="bannerLink">Gruplar</div><div class="bannerLink">Diğer</div> Giriş Yap</div>
+		<?php include 'banner.php'; ?>
 	</div>
 	<div id="icerik">
 		<div id="icerikLinkler"> <div class="icerikLinkBaslik"><b>Etkinlikler</b></div>

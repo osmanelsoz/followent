@@ -1,6 +1,7 @@
 <?php 
 #including our init.php
-//require 'core/init.php';
+require 'core/init.php';
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -37,11 +38,25 @@
 			<div id="container">
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="register.php">Register</a></li>
+			<li><a href="logout.php">Logout</a></li>
 			<li><a href="giris.php">Login</a></li>
 			<li> deneme mehmet </li>
 		</ul>
-		<h1>Welcome to our site!</h1>
+		<?php
+		if($_SESSION["grup"])
+		{
+			require"gruplar/grup_anasayfa.php";
+		}
+		elseif($_SESSION["uye"])
+		{
+			echo"üye anasayfası";
+		}
+		else
+		{
+			echo "<h1>Welcome to our site!</h1>";
+		}
+		?>
+		
 	</div>
 		</div>
 	</div>

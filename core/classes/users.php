@@ -106,10 +106,18 @@ public function activate($email, $email_code) {
 			die($e->getMessage());
 		}
 	}
-	public function login($username, $password) {
+public function grup_bilgi_ekle($grup_adi,$grup_slogan,$email,$bilgi,$adres,$telefon,$website) {
+	$ip 		= $_SERVER['REMOTE_ADDR'];
  
-	$query = $this->db->prepare("SELECT `grup_sifre`, `grup_id` FROM `grup_kullanici` WHERE `grup_kullanici` = ?");
-	$query->bindValue(1, $username);
+	$query = $this->db->prepare("INSERT INTO `grup` (grup_adi,grup_slogan,grup_email,grup_bilgi,grup_adres,grup_telefon,grup_website,kayit_ip) VALUES (?,?,?,?,?,?,?,?) ");
+	$query->bindValue(1, $grup_adi);
+	$query->bindValue(2, $grup_slogan);
+	$query->bindValue(3, $email);
+	$query->bindValue(4, $bilgi);
+	$query->bindValue(5, $adres);
+	$query->bindValue(6, $telefon);
+	$query->bindValue(7, $website);
+	$query->bindValue(8, $ip);
 	
 	try{
 		
@@ -117,7 +125,7 @@ public function activate($email, $email_code) {
 		$data 				= $query->fetch();
 		$stored_password 	= $data['grup_sifre'];
 		$grup_id 				= $data['grup_id'];
-		
+
 
 		
 		#hashing the supplied password and comparing it with the stored hashed password.

@@ -108,15 +108,17 @@ public function activate($email, $email_code) {
 	}
 	public function login($username, $password) {
  
-	$query = $this->db->prepare("SELECT `sifre`, `grup_id` FROM `grup_kullanici` WHERE `grup_kullanici` = ?");
+	$query = $this->db->prepare("SELECT `grup_sifre`, `grup_id` FROM `grup_kullanici` WHERE `grup_kullanici` = ?");
 	$query->bindValue(1, $username);
 	
 	try{
 		
 		$query->execute();
 		$data 				= $query->fetch();
-		$stored_password 	= $data['sifre'];
+		$stored_password 	= $data['grup_sifre'];
 		$grup_id 				= $data['grup_id'];
+		
+
 		
 		#hashing the supplied password and comparing it with the stored hashed password.
 		if($stored_password === sha1($password)){

@@ -21,7 +21,7 @@ if (empty($_POST) === false) {
  			$_SESSION['id'] =  $login; // The user's id is now set into the user's session  in the form of $_SESSION['id'] 
 			
 			#Redirect the user to home.php.
-			header('Location: home.php');
+			header('Location: index.php');
 			exit();
 		}
 	}

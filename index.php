@@ -15,27 +15,10 @@ require 'core/init.php';
 	<div id="banner"> 
 		<?php include 'banner.php'; ?>
 	</div>
-	<div id="icerik">
-		<div id="icerikLinkler"> <div class="icerikLinkBaslik"><b>Etkinlikler</b></div>
-			<div class="icerikLinkDetay">
-				Eğitim<br/>
-				Eğlence<br/>
-				Toplantı<br/>
-				Tanıtım<br/>
-				Proje <br/>
-			</div>
-			 <div class="icerikLinkBaslik"><b>Gruplar</b></div>
-			<div class="icerikLinkDetay">
-				IEEE<br/>
-				Spor Klubü<br/>
-				Doğa Klubü<br/>
-				Zeka Oyunları Klubü<br/>
-				Ne Klubü <br/>
-			</div>
-		</div>
-		<div id="icerikEtkinlikler"> etkinlik
+
+		<div id="icerikEtkinlikler"> <?php require'etkinlik_slider.php'; ?></div>
 		
-			<div id="container">
+			
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="logout.php">Logout</a></li>
@@ -53,12 +36,12 @@ require 'core/init.php';
 		}
 		else
 		{
-			echo "<h1>Welcome to our site!</h1>";
+			
 		}
 		?>
 		
-	</div>
-		</div>
+	
+		
 	</div>
 	<div id="alt"> Site Bilgileri , hakkkımızda vs gibi kapanış bilgileri</div>
 </div>

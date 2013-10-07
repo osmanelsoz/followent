@@ -80,8 +80,8 @@ text-align:center;
   border-right-color:#ccc;
 }
 #icerikEtkinlikler{
-	float: right;
-	width: 700px;
+	position: absolute;
+	height: 500px;
 	  border-right-width:1px;
   border-right-style:solid;
   border-right-color:#ccc;
@@ -100,6 +100,7 @@ ul li{
 	list-style: none;
 }
 #alt{
+	position: absolute;
 	text-align:center;
 	width: 100%;
 	height: 40px;

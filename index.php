@@ -16,7 +16,9 @@ require 'core/init.php';
 		<?php include 'banner.php'; ?>
 	</div>
 
-		<div id="icerikEtkinlikler"> <?php require'etkinlik_slider.php'; ?></div>
+		<div id="icerikEtkinlikler"> 
+			<?php require'etkinlik_slider.php'; ?>
+		</div>
 		
 			
 		<ul>

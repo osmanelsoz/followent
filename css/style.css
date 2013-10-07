@@ -30,6 +30,8 @@ html{
 } 
 #bannerContainer
 {
+margin: auto;
+padding:0;
 text-align:center;
 	width: 1000px;
 }
@@ -69,6 +71,7 @@ text-align:center;
   margin-right: auto ;
 	width: 1200px;
 		height:100vh;
+		text-align: center;
 }
 #icerikLinkler{
 	text-align:left;
@@ -80,7 +83,10 @@ text-align:center;
   border-right-color:#ccc;
 }
 #icerikEtkinlikler{
+	text-align: center;
 	position: absolute;
+	margin: auto;
+	/*width: 1200px;*/
 	height: 500px;
 	  border-right-width:1px;
   border-right-style:solid;

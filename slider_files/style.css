@@ -13,7 +13,7 @@
 	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
 
 -----------------------------------------------------------------------------------*/
-
+/*
 @font-face {
   font-family: 'FontAwesome';
   src: url('fonts/fontawesome-webfont.eot?v=3.0.1');
@@ -23,7 +23,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/*
 html {
 	-webkit-text-size-adjust: none;
 }
@@ -34,7 +34,7 @@ body
 	padding:0;
 	font:12px/16px 'Arial';
 }
-
+*/
 .bg-overlay
 {
 	padding:1px 0;
@@ -245,7 +245,7 @@ img {
 
 .container
 {
-	width:972px;
+	width:100%;
 	margin:0 auto;
 }
 
@@ -288,13 +288,14 @@ img {
 }
 
 /* 110% zoom fix */
+/*
 @media only screen and (min-width: 980px) and (max-width: 1259px)
 {
 	.webkit .block-1
 	{
 		width:95.99px;
 	}
-}
+}*/
 
 .block-1.no-mar
 {
@@ -772,6 +773,7 @@ img {
  
 .big-slider-wrapper
 {
+		width: 96%; /* ekledim */
 	overflow:hidden;
 }
 
@@ -950,6 +952,10 @@ img {
 {
 	display:block;
 	position:relative;
+}
+.text-wrapper /* ben ekledimmm yazı taban rengi*/
+{
+	background-color: #bbb;
 }
 
 .big-slider-slide .text .title

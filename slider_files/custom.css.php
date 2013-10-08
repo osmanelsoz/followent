@@ -25,75 +25,6 @@ h1,h2,h3,h4,h5,h6,
 	font-family:'Lato';
 }
 
-/************************
- * Background
- ************************/
-
-body
-{
-	background-color:#ffffff;background-image:url(http://muratbulbul.tk/takvim/wp-content/themes/metro/img/bg/bg-14.png);background-repeat:repeat;background-attachment:fixed}
-
-
-/************************
- * Colors
- ************************/
- 
-
-body
-{
-	color:#1a1a1a;
-}
-
-.headline-text
-{
-	color:#c2c2c0;
-}
-
-/* Menu */
-
-.bg-color-menu,
-.primary-menu li
-{
-	background-color:#4788ff;
-	}
-
-.primary-menu a,
-.logo-text
-{
-	color:#ffffff;
-}
-
-.primary-menu li a:hover,
-.primary-menu li.active a,
-.primary-menu li ul a
-{
-	color:#ffffff;
-}
-
-.primary-menu li ul,
-.primary-menu a:hover,
-.primary-menu li.active a
-{
-	background-color:#898989;
-}
-
-.primary-menu li ul a
-{
-	border-bottom-color:rgba(255,255,255,0.4);
-}
-
-.primary-menu li ul a:hover,
-.primary-menu li ul li.active > a
-{
-	background-color:#4788ff;
-	color:#ffffff;
-}
-
-.primary-menu > li > ul:after
-{
-	background-color:#4788ff;
-}
-
 /* Slider */
 
 .bg-color-slider
@@ -145,13 +76,6 @@ a,
 	color:#4788ff;
 }
 
-.footer a,
-.footer .sub-footer a:hover,
-.footer .latest-tweets .tweet-status a:hover,
-.footer .testimonials-block .item .qo
-{
-	color:#5086ea;
-}
 
 .bg-color-main,
 .sort-menu li a.button .count
@@ -164,10 +88,7 @@ a,
 	background-color:#ffffff;
 	}
 
-.bg-color-footer
-{
-	background-color:#4a4a4a;
-	}
+
 
 .custom-gallery .controls,
 .navigation-pages a:hover span.item,

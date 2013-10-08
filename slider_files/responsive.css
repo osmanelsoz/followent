@@ -1,16 +1,14 @@
 /* Note: Design for a width of 1420 */
-
+/***
 @media only screen and (min-width: 1420px)
 {
-	body
-	{
-		font-size:14px;
-		line-height:21px;
-	}
 	
 	.container
 	{
+		font-size:14px;
+		line-height:21px;
 		width:1404px;
+		height: 500px;
 	}
 	
 	.block-1
@@ -18,7 +16,7 @@
 		width:144px;
 	}
 
- 	/* 110% zoom fix */
+ 	/* 110% zoom fix *//*
 	.webkit .block-1
 	{
 		width:143.99px;
@@ -457,7 +455,7 @@
 /*************************************/
 
 /* Note: Design for a width of 1220 */
-
+/*
 @media only screen and (min-width: 1260px) and (max-width: 1419px)
 {
 	
@@ -875,6 +873,7 @@
 
 /* Note: Design for a width of 768px */
 
+/*
 @media only screen and (min-width: 768px) and (max-width: 979px)
 {
 
@@ -1309,7 +1308,7 @@
 	}
 
 }
-
+*************/
 /*************************************/
 /*************************************/
 /*************************************/
@@ -1318,8 +1317,13 @@
 	
 @media only screen and (max-width: 767px)
 {
-
+/*
 	body
+	{
+		font-size:12px;
+		line-height:18px;
+	}
+	*/	body
 	{
 		font-size:12px;
 		line-height:18px;

@@ -379,6 +379,7 @@ img {
 
 .block-h-half
 {
+	width: 942px; /* ben ekledim */
 	height:42px;
 }
 
@@ -955,7 +956,8 @@ img {
 }
 .text-wrapper /* ben ekledimmm yazı taban rengi*/
 {
-	background-color: #bbb;
+	background-color: #fff;
+	color: #505050;
 }
 
 .big-slider-slide .text .title
@@ -978,6 +980,7 @@ img {
 .no-touch .big-slider-slide:hover .text .title
 {
 	color:#fff;
+	background-color:#909090 ; /* ben ekledim hover back color değişimi */
 }
 
 .big-slider-slide .text .text-text
@@ -1008,22 +1011,24 @@ img {
 
 .big-slider-control .control-left
 {
-	background:url(img/slider-controls.png) no-repeat 12px 6px;
+	background:url(left_a.png) no-repeat 0px 0px;
 }
 
 .big-slider-control .control-left:hover
 {
-	background-position:12px -144px;
+	background:url(left.png) no-repeat 0px 0px;
+	/*background-position:12px -144px;*/
 }
 
 .big-slider-control .control-right
 {
-	background:url(img/slider-controls.png) no-repeat -120px 6px;
+	background:url(right_a.png) no-repeat +33px 0px;
 }
 
 .big-slider-control .control-right:hover
 {
-	background-position:-120px -144px;
+	background:url(right.png) no-repeat +33px 0px;
+	/* background-position:-120px -144px;*/
 }
 
 .big-slider-control .control-seek
@@ -1033,7 +1038,7 @@ img {
 	height:100%;
 	margin:0 1%;
 	
-	background:url(img/w1.png) repeat-x left 19px;
+	background:url(slide.png) repeat-x left 19px;
 }
 
 .touch .big-slider-control .control-seek
@@ -1047,7 +1052,7 @@ img {
 	height:31px;
 	width:34px;
 	/*background-color:rgba(0,0,0,0.05);*/
-	background:url(img/seek-box.png) repeat-x left -4px;
+	background:url(w.png) repeat-x left -4px;
 	position:relative;
 	left:0;
 	

@@ -9,8 +9,8 @@
 									<span class="text-wrapper">
 										<span class="text block-h-1">
 											<span class="text-inner" style="top: 0px;">
-												<span class="title">Example 1</span>
-												<span class="text-text" style="top: 0px;">Etkinlik açıklaması</span>
+												<span class="title">ODTU</span>
+												<span class="text-text" style="top: 0px;">FOLLOWENT ODTÜ İÇİN AÇILDI</span>
 											</span>
 										</span>
 									</span>
@@ -18,8 +18,8 @@
 									<span class="text-wrapper">
 										<span class="text block-h-1">
 											<span class="text-inner" style="top: 120px;">
-												<span class="title">Example2</span>
-												<span class="text-text" style="top: 30px;">Etkinlik açıklama</span>
+												<span class="title">TANIŞALIM</span>
+												<span class="text-text" style="top: 30px;">Followent Tanışma Toplantısı</span>
 											</span>
 										</span>
 									</span>
@@ -27,8 +27,8 @@
 									<span class="text-wrapper">
 										<span class="text block-h-1">
 											<span class="text-inner" style="top: 0px;">
-												<span class="title">Example 3</span>
-												<span class="text-text" style="top: 0px;">Açıklamalar</span>
+												<span class="title">FOLLOWENT CAFE</span>
+												<span class="text-text" style="top: 0px;">FOLLOWENT ilk etkinliğini gerçekelştirdi.</span>
 											</span>
 										</span>
 									</span>
@@ -36,8 +36,8 @@
 									<span class="text-wrapper">
 										<span class="text block-h-1">
 											<span class="text-inner" style="top: 0px;">
-												<span class="title">Example 4</span>
-												<span class="text-text" style="top: 0px;">Açıklamalar</span>
+												<span class="title">FOLLOWENT EKİBİ</span>
+												<span class="text-text" style="top: 0px;">FOLLOWENT Ekibi Sizlerle Buluşuyor.</span>
 											</span>
 										</span>
 									</span>

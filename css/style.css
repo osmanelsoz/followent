@@ -53,17 +53,19 @@ text-align:center;
 .bannerLinkler{
 	float:right;
 	width: 700px;
-	height: 100px;
+	height: auto;
  }
 .bannerLink{
+	font-weight: bold;
 	width: 150px;
-	color: #fff;
-	height:  100px;
+	color: #eaf1fd;
+	height:  50px;
 	float:left;
 }
 .bannerLink:hover{
-	background-color: #D0D0D0 ;
-	color: #4788ff;
+	background-color: #4582f3 ;
+	color: #fff;
+	/*color: #4788ff;*/
 	/*background-image:url(../images/bg.png); */
 }
 #container{
